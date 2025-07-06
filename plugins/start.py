@@ -146,7 +146,7 @@ async def start_command(client: Client, message: Message):
                     else None
                 )
                 keyboard = InlineKeyboardMarkup(
-                    [[InlineKeyboardButton("ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ!", url=https://t.me/cineoriginals/59)]]
+                    [[InlineKeyboardButton("ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ!", url=CUSTOM_CAPTION)]]
                 ) if reload_url else None
 
                 await notification_msg.edit(
