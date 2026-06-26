@@ -42,16 +42,16 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/AkMoviesHubBackup for support")
+            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/AkMovieVerse for support")
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/AkMoviesHubBackup")
-        self.LOGGER(__name__).info(f"""BOT DEPLOYED BY @Akmoviesbotz""")
+        self.LOGGER(__name__).info(f"""BOT DEPLOYED BY @Ak_OwnerBot""")
 
         self.set_parse_mode(ParseMode.HTML)
         self.username = usr_bot_me.username
-        self.LOGGER(__name__).info(f"Bot Running..! Made by @Akmoviebotz")   
+        self.LOGGER(__name__).info(f"Bot Running..! Made by @AkMovieVerse")   
 
         # Start Web Server
         app = web.AppRunner(await web_server())
@@ -59,7 +59,7 @@ class Bot(Client):
         await web.TCPSite(app, "0.0.0.0", PORT).start()
 
 
-        try: await self.send_message(OWNER_ID, text = f"<b><blockquote> Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @Akmoviebotz</blockquote></b>")
+        try: await self.send_message(OWNER_ID, text = f"<b><blockquote> Bᴏᴛ Rᴇsᴛᴀʀᴛᴇᴅ by @AkMovieVerse</blockquote></b>")
         except: pass
 
     async def stop(self, *args):
